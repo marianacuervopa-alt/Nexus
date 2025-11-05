@@ -1,0 +1,739 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* === HEADER === */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fff;
+  padding: 10px 40px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Logo izquierdo */
+.logo-izquierda {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+/* Navegación */
+.nav ul {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav a:hover {
+  color: #007bff;
+}
+
+/* === Content === */
+.content {
+  display: flex;
+  flex-direction: column;
+}
+
+.container-image {
+  background-image: url("./recursos/Header.png");
+  background-size: 100%;
+  /* background-size: cover; */
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 50vh;
+}
+
+.overlay-content {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 60px;
+  height: 50vh;
+}
+
+.box-left,
+.box-right {
+  width: 50%;
+  color: white;
+}
+
+.box-left {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  min-width: 0;
+}
+
+.box-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.box-left h2 {
+  font-size: 70px;
+}
+
+.box-left .subtitle {
+  font-size: 40px;
+  color: #b099ef;
+}
+
+.box-left .text {
+  font-size: 18px;
+  font-weight: 300;
+}
+
+.box-right .subtitle {
+  font-size: 18px;
+  font-weight: 300;
+}
+
+.btn-register {
+  padding: 18px;
+  font-size: 28px;
+  font-weight: 600;
+  background-color: #b099ef;
+  box-shadow: none;
+  border: 0px solid;
+  border-radius: 10px;
+  color: white;
+  margin-top: 470px;
+  margin-right: 33px;
+}
+
+.peoples {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+}
+
+.container-avatars {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+.avatar {
+  width: 200px;
+  height: 200px;
+  border-radius: 200%;
+  overflow: hidden;
+}
+
+.avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.title-peoples {
+  color: #3e1e96;
+  font-size: 35px;
+  margin-top: 20px;
+}
+
+.button-peoples {
+  color: white;
+  background-color: #3e1e96;
+  font-size: x-large;
+  padding: 15px;
+  border-radius: 15px;
+  box-shadow: none;
+  border: solid;
+}
+
+.logistics-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  gap: 15px; 
+}
+
+.logistic {
+  display: flex;
+  align-items: center;
+  gap: 12px; 
+}
+
+.logistics-title-button {
+  padding: 10px 25px;
+  font-size: large;
+  font-weight: bold;
+  background-color: white;
+  border-radius: 20px; 
+  border-color: #5a1ae3;
+  margin-top: 30px;
+  color: #5a1ae3;
+}
+
+.info-log {
+  padding: 12px 20px;
+  font-size: large;
+  font-weight: bold;
+  background-color: white; 
+  border-radius: 10px;
+  border: #d4c1f9 2px solid;
+}
+
+/* === Card == */
+.container-cards {
+  display: flex;
+  gap: 15px;
+  padding: 15px;
+}
+
+.news-card {
+  position: relative;
+  background-image: url("./recursos/fondo-main.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 200px;
+  width: 300px;
+  border-radius: 15px;
+  overflow: hidden;
+  color: white;
+}
+
+.news-content {
+  position: absolute;
+  padding: 20px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 5px;
+}
+
+.news-content h2 {
+  font-size: 16px;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.news-content h3 {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.news-content p {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.news-content .btn {
+  padding: 8px 15px;
+  background-color: #5a1ae3;
+  color: white;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  box-shadow: none;
+  border: 0px solid;
+}
+
+.news-content .btn:hover {
+  background-color: #3f0fc4;
+}
+
+footer {
+  background-color: #3f0fc4;
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: white;
+}
+
+.footer-info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.logo-title {
+  font-size: 30px;
+  font-weight: bold;
+  letter-spacing: 10px;
+}
+
+.logo-subtitle {
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.slider-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+button:hover {
+  background-color: #e2daf7;
+  cursor: pointer;
+}
+
+.container-button {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.container-button img {
+  width: 30px;
+}
+
+.social-icons {
+  width: 40px;
+  filter: brightness(0) invert(1);
+}
+.nav-volver {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+}
+
+.nav-volver img {
+  width: 30px;
+  height: 30px;
+  filter: brightness(0) invert(1);
+}
+
+/* Estilos para formulario */
+
+.body-formulario {
+    font-family: Arial, sans-serif; 
+    background-color: #fff;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    min-height: 100vh;
+    padding: 40px 20px;
+}
+
+.body-formulario .header-logo {
+    text-align: left;
+    margin-bottom: 30px; 
+    width: 100%; 
+    max-width: 420px; 
+}
+
+.body-formulario .logo-title {
+    font-size: 32px;
+    font-weight: 800;
+    color: #111;
+    letter-spacing: 1px;
+}
+
+.body-formulario .logo-subtitle {
+    font-size: 12px;
+    font-weight: 700;
+    color: #555;
+    letter-spacing: 4.5px;
+    margin-top: -5px;
+}
+
+.form-container {
+    width: 100%;
+    max-width: 420px;
+}
+
+.body-formulario h1 {
+    font-size: 32px;
+    font-weight: 800;
+    color: #3E1E96; 
+    text-align: left;
+    margin-bottom: 15px;
+}
+
+.form-subtitle {
+    font-size: 18px;
+    color: #333;
+    line-height: 1.5;
+    text-align: left;
+    margin-bottom: 30px;
+}
+
+.input-group {
+    margin-bottom: 18px; 
+}
+
+.registration-form input {
+    width: 100%; 
+    padding: 18px 20px;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+    border: 1px solid #D1D1D1;
+    border-radius: 10px;
+}
+
+.btn-submit {
+    width: 100%; 
+    background-color: #3E1E96;
+    color: white;
+    font-size: 18px;
+    font-weight: 700;
+    padding: 18px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.legal-text {
+    font-size: 14px;
+    color: #555;
+    text-align: left;
+    line-height: 1.6;
+    margin-top: 25px;
+}
+
+.legal-text a {
+    color: #3E1E96;
+    font-weight: 700;
+}
+
+
+.nav-volver-formulario {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    z-index: 100; 
+}
+.nav-volver-formulario img {
+    width: 30px;
+    height: 30px;
+}
+
+
+/* Estilos pal noticias.html */
+
+.body-noticias {
+    background-color: #3f0fc4; 
+    color: white;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 40px 20px;
+}
+
+.news-container {
+    display: flex;
+    align-items: flex-start;
+    gap: 50px;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.news-header {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.news-logo .logo-title {
+    font-size: 54px; 
+    color: white; 
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+.news-logo .logo-subtitle {
+    font-size: 20px; 
+    letter-spacing: 3px; 
+    color: #DAB2FF; 
+    font-weight: 700;
+}
+
+.news-header h2 {
+    font-size: 50px; 
+    font-weight: 800;
+    
+}
+
+.news-grid {
+    flex: 2;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px; 
+}
+
+.news-article-card {
+    background-color: white;
+    color: #333;
+    border-radius: 12px; 
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); 
+}
+
+.news-article-card img {
+    width: 100%;
+    display: block; 
+}
+
+.news-article-card h3 {
+    font-size: 20px;
+    padding: 20px; 
+    color: #333;
+    font-weight: 800;
+}
+
+@media (max-width: 700px) {
+
+  .container-image {
+  height: 25vh;
+}
+  .box-right h2 {
+    font-size: 12px;
+    align-content: end;
+  }
+
+  .box-left h2 {
+    font-size: 30px;
+  }
+
+  .box-left .subtitle {
+    font-size: 12px;
+    color: #b099ef;
+  }
+
+  .box-left .text {
+    font-size: 10px;
+    font-weight: 500;
+  }
+
+  .box-right .subtitle {
+    font-size: 10px;
+    font-weight: 500;
+  }
+
+  .avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 120%;
+    overflow: hidden;
+  }
+
+  .footer-info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 12px;
+  }
+
+  .logistic {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+  }
+
+  .social-icons {
+    width: 20px;
+    filter: brightness(0) invert(1);
+  }
+
+  .logo-title {
+    font-size: 27px;
+    font-weight: bold;
+    letter-spacing: 2px;
+  }
+
+  .logo-subtitle {
+    font-weight: bold;
+    font-size: 10px;
+  }
+
+  .overlay-content {
+    padding: 0 15px;
+  }
+
+  nav ul li {
+    font-size: 10px;
+  }
+
+  .container-avatars {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .title-peoples {
+    color: #3e1e96;
+    font-size: 20px;
+    margin-top: 10px;
+  }
+
+  .logistics-title-button {
+  padding: 10px 25px;
+  font-size: small;
+  font-weight: bold;
+  background-color: white;
+  border-radius: 20px; 
+  margin-top: 15px;
+  border: #8b69e9 2px solid;
+}
+
+  .info-log {
+    padding: 10px;
+    font-size: small;
+    font-weight: 500;
+    background-color: white;
+    box-shadow: none;
+    border-radius: 10px;
+    border: #d4c1f9 2px solid;
+  }
+
+  .container-button img {
+    width: 20px;
+  }
+
+  .button-peoples {
+    color: white;
+    background-color: #3e1e96;
+    font-size: small;
+    padding: 10px;
+    border-radius: 15px;
+    box-shadow: none;
+    border: solid;
+  }
+
+  .btn-register {
+    padding: 5px;
+    font-size: small;
+    font-weight: 600;
+    background-color: #b099ef;
+    box-shadow: none;
+    border: 0px solid;
+    border-radius: 10px;
+    color: white;
+    margin-top: 0px;
+    margin-bottom: 50px;
+    margin-right: 122;
+  }
+
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+    padding: 10px 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+
+  .nav ul {
+    display: flex;
+    list-style: none;
+    gap: 10px;
+  }
+
+  /* estilos de formulario celular */
+
+  .body-formulario {
+    padding: 20px 15px;
+    align-items: center;
+    justify-content: flex-start; 
+}
+
+/* Logo solo en la pagina formulario */
+.body-formulario .header-logo {
+    max-width: 100%;
+    margin-bottom: 25px;
+}
+
+.body-formulario .logo-title {
+    font-size: 28px;
+}
+
+.body-formulario .logo-subtitle {
+    font-size: 10px;
+    letter-spacing: 3px;
+}
+
+/* Titulo Regístrate ahora */
+.body-formulario h1 {
+    font-size: 28px;
+}
+
+.body-formulario .form-subtitle {
+    font-size: 16px;
+}
+
+.body-formulario .registration-form input {
+    padding: 16px 18px;
+    font-size: 15px;
+}
+
+.body-formulario .btn-submit {
+    padding: 16px;
+    font-size: 16px;
+}
+
+.body-formulario .legal-text {
+    font-size: 13px;
+}
+
+  /* estilos de noticias celular */
+
+  .body-noticias {
+    padding: 40px 30px; 
+    align-items: flex-start; 
+    justify-content: flex-start; 
+  }
+
+  .news-logo {
+      align-items: flex-start;
+  }
+
+  .news-container {
+      flex-direction: column;
+      gap: 30px; 
+      width: 100%; 
+  }
+
+  .news-header {
+      width: 100%;
+  }
+
+  .news-header h2 {
+      font-size: 40px;
+      text-align: center;
+  }
+
+  .news-grid {
+      grid-template-columns: 1fr;
+      width: 100%; 
+  }
+
+  .news-article-card h3 {
+      font-size: 18px;
+      padding: 16px;
+  }
+}
